@@ -11,7 +11,7 @@
     "javascript",
     "type",
     "convert",
-    "parse"
+    "conversion"
   ],
   "scripts": {
     "format": "prettier --write \"**/*.{js,ts,jsx,tsx}\" -c",

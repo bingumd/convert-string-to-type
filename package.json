@@ -1,6 +1,6 @@
 {
 	"name": "convert-string-to-type",
-	"version": "0.1.2",
+	"version": "0.2.0",
 	"author": "bingumd <bingumd@gmail.com>",
 	"description": "Simple javascript type conversion.",
 	"main": "src/index.js",

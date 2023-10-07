@@ -1,4 +1,5 @@
 # convert-string-to-type
+
 Simple javaScript type conversion.
 
 ## Installation
@@ -18,9 +19,14 @@ yarn install convert-string-to-type
 ## Usage
 
 ```js
-import { convert } from 'convert-string-to-type'
+import convertToType, { toBoolean, toNumber, toString } from 'convert-string-to-type'
 
-const number = convert('18') // => 18
-const boolean = convert('true') // => true
-const string = convert('string') // => 'string'
+const number = convertToType('18') // => 18
+const number = toBoolean('20') // => 20
+
+const boolean = convertToType('true') // => true
+const boolean = toBoolean('False') // => false
+
+const string = convertToType('string') // => 'string'
+const string = toString(200) // => '200'
 ```

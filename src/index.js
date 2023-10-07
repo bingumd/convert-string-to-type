@@ -1,18 +1,24 @@
+// Import the conversion utility functions.
 import { toBoolean, toNumber, toString } from './converters'
-export { toBoolean, toNumber, toString }
 
 /**
- * Converts a `value` to `number`, `boolean` or `string`
+ * Converts a `value` to `number`, `boolean`, or `string`.
  *
- * @param value - The value to convert
- * @returns The converted `value`
+ * @param {any} value - The value to convert.
+ * @returns {any} The converted `value`.
  */
-const convert = value => {
+const convertToType = value => {
+	// Check if the value is one of the boolean representations ('true', 'false', 'True', 'False').
 	if (['false', 'False', 'true', 'True'].includes(value)) {
-		return toBoolean(value)
+		return toBoolean(value) // Convert to a boolean value.
 	}
 
+	// Try to convert to a number, if it fails, convert to a string.
 	return toNumber(value) || toString(value)
 }
 
-export default convert
+// Export the individual conversion functions.
+export { toBoolean, toNumber, toString }
+
+// Export the main 'convertToType' function as the default export.
+export default convertToType

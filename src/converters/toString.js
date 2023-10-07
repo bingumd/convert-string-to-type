@@ -1,13 +1,15 @@
 /**
- * Convert a `value` to `string`
+ * Converts a `value` to a string.
  *
- * @param value - The value to convert
- * @returns The converted string `value` or `undefined`
+ * @param {any} value - The value to convert.
+ * @returns {string|undefined} The converted string value or `undefined` if the value is `undefined`.
  */
 export const toString = value => {
+	// Check if the value is undefined.
 	if (value === undefined) {
 		return undefined
 	}
 
+	// Use the `toString` method if it exists, or fall back to a basic string conversion.
 	return value.toString !== undefined ? value.toString() : value
 }

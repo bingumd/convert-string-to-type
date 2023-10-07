@@ -1,9 +1,9 @@
 const types = new Map([
-    ['true', true],
-    ['True', true],
-    ['false', false],
-    ['False', false],
-    [undefined, undefined],
+	['true', true],
+	['True', true],
+	['false', false],
+	['False', false],
+	[undefined, undefined],
 ])
 
 /**
@@ -12,4 +12,4 @@ const types = new Map([
  * @param value - The value to convert
  * @returns The converted boolean `value` or `undefined`
  */
-export const toBoolean = (value) => types.get(value)
+export const toBoolean = value => types.get(value)

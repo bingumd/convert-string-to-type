@@ -7,8 +7,12 @@ export { toBoolean, toNumber, toString }
  * @param value - The value to convert
  * @returns The converted `value`
  */
-const convert = (value) => {
-    return toNumber(value) || toBoolean(value) || toString(value)
+const convert = value => {
+	if (['false', 'False', 'true', 'True'].includes(value)) {
+		return toBoolean(value)
+	}
+
+	return toNumber(value) || toString(value)
 }
 
 export default convert

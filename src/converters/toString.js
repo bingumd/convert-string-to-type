@@ -4,10 +4,10 @@
  * @param value - The value to convert
  * @returns The converted string `value` or `undefined`
  */
-export const toString = (value) => {
-    if (value === undefined) {
-        return undefined
-    }
+export const toString = value => {
+	if (value === undefined) {
+		return undefined
+	}
 
-    return value.toString !== undefined ? value.toString() : value
+	return value.toString !== undefined ? value.toString() : value
 }

@@ -1,31 +1,31 @@
 {
-  "name": "convert-string-to-type",
-  "version": "0.1.1",
-  "author": "bingumd <bingumd@gmail.com>",
-  "description": "Simple javascript type conversion.",
-  "main": "src/index.js",
-  "homepage": "https://github.com/bingumd/convert-string-to-type",
-  "license": "MIT",
-  "repository": "bingumd/convert-string-to-type",
-  "keywords": [
-    "javascript",
-    "type",
-    "convert",
-    "conversion"
-  ],
-  "scripts": {
-    "format": "prettier --write \"**/*.{js,ts,jsx,tsx}\" -c",
-    "lint": "eslint src test",
-    "test": "jest"
-  },
-  "devDependencies": {
-    "@babel/preset-env": "^7.16.4",
-    "eslint": "^8.3.0",
-    "eslint-config-prettier": "^8.3.0",
-    "eslint-plugin-import": "^2.25.3",
-    "eslint-plugin-jest": "^25.3.0",
-    "eslint-plugin-prettier": "^4.0.0",
-    "jest": "^27.2.1",
-    "prettier": "^2.4.1"
-  }
+	"name": "convert-string-to-type",
+	"version": "0.1.2",
+	"author": "bingumd <bingumd@gmail.com>",
+	"description": "Simple javascript type conversion.",
+	"main": "src/index.js",
+	"homepage": "https://github.com/bingumd/convert-string-to-type",
+	"license": "MIT",
+	"repository": "bingumd/convert-string-to-type",
+	"keywords": [
+		"javascript",
+		"type",
+		"convert",
+		"conversion"
+	],
+	"scripts": {
+		"format": "prettier --write \"**/*.{js,ts,jsx,tsx}\" -c",
+		"lint": "eslint src test",
+		"test": "jest"
+	},
+	"devDependencies": {
+		"@babel/preset-env": "^7.16.4",
+		"eslint": "^8.3.0",
+		"eslint-config-prettier": "^8.3.0",
+		"eslint-plugin-import": "^2.25.3",
+		"eslint-plugin-jest": "^25.3.0",
+		"eslint-plugin-prettier": "^4.0.0",
+		"jest": "^27.2.1",
+		"prettier": "^2.4.1"
+	}
 }

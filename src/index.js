@@ -8,6 +8,8 @@ import { toBoolean, toNumber, toString } from './converters'
  * @returns {any} The converted `value`.
  */
 const convertToType = value => {
+	if (typeof value === 'object') return
+
 	// Check if the value is one of the boolean representations ('true', 'false', 'True', 'False').
 	if (['false', 'False', 'true', 'True'].includes(value)) {
 		return toBoolean(value) // Convert to a boolean value.

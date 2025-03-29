@@ -7,6 +7,8 @@
 export const toBoolean = value => {
 	// Map of string representations to boolean values.
 	const stringToBooleanMap = new Map([
+		[true, true],
+		[false, false],
 		['true', true],
 		['True', true],
 		['false', false],
